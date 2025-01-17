@@ -83,11 +83,12 @@ footer {
 .align {
     width: 64%;
     margin: 1rem 16%;
-    display: flex;
-    align-items: center;
+
 }
 
 #navigation {
+    display: flex;
+    align-items: center;
 
     #logo {
         width: 20%;
@@ -123,7 +124,6 @@ footer {
 #technology {
     display: flex;
     height: 500px;
-    justify-content: center;
 }
 
 .main_pic {
@@ -138,4 +138,9 @@ footer {
 
 #community {
     flex-direction: row-reverse;
+}
+
+#footer_links {
+    display: flex;
+    flex-direction: column;
 }
