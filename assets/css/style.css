@@ -17,7 +17,6 @@
 }
 
 * {
-    border: 654px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -27,11 +26,15 @@
     * {
         border: 2px dashed black;
         font-size: 18px;
-        color: white;
+        color: black;
     }
 
     header {
         background-color: var(--debug-header-bg);
+    }
+
+    #navigation {
+        background-color: var(--debug-navigation-bg);
     }
 
     #jumbotron {
@@ -39,20 +42,36 @@
     }
 
     main {
+        background-color: white;
+    }
+
+    #technology {
+        background-color: var(--debug-section3);
+    }
+
+    .main_bg_darker {
         background-color: var(--ds-bg-altdarker);
+    }
+
+    .main_bg_lighter {
+        background-color: var(white);
+    }
+
+    .main_pic {
+        background-color: var(--debug-section1);
+    }
+
+    .main_text {
+        background-color: var(--debug-section2);
+    }
+
+    .main_alt2 {
+        background-color: var(--debug-section3);
     }
 
     footer {
         background-color: var(--debug-footer-bg);
     }
-}
-
-main {
-    min-height: 120px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
 }
 
 footer {
@@ -61,14 +80,14 @@ footer {
     align-items: center;
 }
 
-#navigation {
-    background-color: var(--debug-navigation-bg);
-    display: flex;
-    justify-content: center;
-    align-content: top;
+.align {
     width: 64%;
     margin: 1rem 16%;
+    display: flex;
     align-items: center;
+}
+
+#navigation {
 
     #logo {
         width: 20%;
@@ -96,4 +115,27 @@ footer {
         min-width: 50%;
         min-height: 80%;
     }
+}
+
+#invite_only,
+#community,
+#fandom,
+#technology {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+.main_pic {
+    height: 500px;
+    flex-grow: 3;
+}
+
+.main_text {
+    height: 500px;
+    flex-grow: 2;
+}
+
+#community {
+    flex-direction: row-reverse;
 }
