@@ -3,6 +3,7 @@
     --ds-bg: white;
     --ds-bg-altdarker: #d3d3d3;
     --debug-header-bg: #add8e6;
+    --debug-navigation-bg: #d6a630;
     --debug-jumbotron-bg: #00008b;
     --debug-jumbotron-section: #ee82ee;
     --debug-section1: #1e90ff;
@@ -23,33 +24,40 @@
 
 .debug {
 
+    * {
+        border: 2px dashed black;
+        font-size: 18px;
+    }
+
     header {
-        background-color: ;
+        background-color: var(--debug-header-bg);
+    }
+
+    #jumbotron {
+        background-color: var(--debug-jumbotron-bg);
     }
 
     main {
-        background-color: ;
+        background-color: var(--ds-bg-altdarker);
         border-style: dashed;
     }
 
     footer {
-        background-color: ;
+        background-color: var(--debug-footer-bg);
     }
 }
 
 header {
-    min-height: 120px;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* min-height: 120px; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
 }
 
 main {
     min-height: 120px;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -57,6 +65,30 @@ footer {
     min-height: 120px;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+}
+
+#navigation {
+    background-color: var(--debug-navigation-bg);
+    display: flex;
+    justify-content: center;
+    align-content: top;
+    width: 64%;
+    margin: 1rem 16%;
+    align-items: center;
+    min-height: 3rem;
+
+    #logo {
+        width: 20%;
+    }
+
+    #home {
+        width: 60%;
+        text-align: center;
+    }
+
+    #login {
+        width: 20%;
+        text-align: end;
+    }
 }
