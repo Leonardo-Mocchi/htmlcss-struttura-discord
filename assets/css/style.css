@@ -1,0 +1,62 @@
+:root {
+    --ds-dark: black;
+    --ds-bg: white;
+    --ds-bg-altdarker: #d3d3d3;
+    --debug-header-bg: #add8e6;
+    --debug-jumbotron-bg: #00008b;
+    --debug-jumbotron-section: #ee82ee;
+    --debug-section1: #1e90ff;
+    --debug-section2: #ffc0cb;
+    --debug-section3: #228b22;
+    --debug-footer-bg: #23272a;
+    --debug-footer-left-column: #f08080;
+    --debug-footer-columns: #20b2aa;
+    --debug-footer-logo-bg: #7fffd4;
+    --debug-footer-logo-section: #feb5c0;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+
+    header {
+        background-color: ;
+    }
+
+    main {
+        background-color: ;
+        border-style: dashed;
+    }
+
+    footer {
+        background-color: ;
+    }
+}
+
+header {
+    min-height: 120px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    min-height: 120px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    min-height: 120px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
