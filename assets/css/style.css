@@ -17,6 +17,7 @@
 }
 
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -72,20 +73,41 @@
     footer {
         background-color: var(--debug-footer-bg);
     }
+
+    #footer_links {
+        background-color: var(--ds-bg);
+    }
+
+    #social {
+        background-color: var(--debug-footer-left-column);
+    }
+
+    .site_map {
+        background-color: var(--debug-footer-columns);
+        border: unset;
+        border: 2px dashed white;
+    }
+
+    #button_section {
+        background-color: var(--debug-footer-logo-bg);
+    }
+
+    .footer_button {
+        background-color: var(--debug-footer-logo-section);
+    }
 }
 
 footer {
-    min-height: 120px;
-    display: flex;
-    align-items: center;
+    height: 740px;
 }
 
 .align {
-    width: 64%;
+    width: 68%;
     margin: 1rem 16%;
 
 }
 
+/* header */
 #navigation {
     display: flex;
     align-items: center;
@@ -118,6 +140,8 @@ footer {
     }
 }
 
+/* /header */
+
 #invite_only,
 #community,
 #fandom,
@@ -128,19 +152,52 @@ footer {
 
 .main_pic {
     height: 500px;
-    flex-grow: 3;
+    width: 60%;
 }
 
 .main_text {
     height: 500px;
-    flex-grow: 2;
+    width: 40%;
 }
 
 #community {
     flex-direction: row-reverse;
 }
 
+/* /main */
+
 #footer_links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 580px;
+}
+
+#social {
+    width: 30%;
+}
+
+.site_map {
+    width: 17.5%;
+}
+
+.separator {
+    border: unset;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    height: 1px;
+    background-color: var(--ds-bg);
+}
+
+#footest {
+    justify-content: end;
+    margin-bottom: unset;
+}
+
+#button_section {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
 }
