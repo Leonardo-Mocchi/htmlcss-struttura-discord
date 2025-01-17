@@ -27,6 +27,7 @@
     * {
         border: 2px dashed black;
         font-size: 18px;
+        color: white;
     }
 
     header {
@@ -76,7 +77,6 @@ footer {
     width: 64%;
     margin: 1rem 16%;
     align-items: center;
-    min-height: 3rem;
 
     #logo {
         width: 20%;
@@ -90,5 +90,18 @@ footer {
     #login {
         width: 20%;
         text-align: end;
+    }
+}
+
+#jumbotron {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #jumbo_center {
+        background-color: var(--debug-jumbotron-section);
+        min-width: 50%;
+        min-height: 80%;
     }
 }
